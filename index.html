@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Texto para Fala</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de <span>Texto </span>para<span>Fala</span></h1>
+        <p>Digite um texto ou envie um arquivo para ser lido:</p>
+        <div id="entrada-de-conteudo"></div>
+        <textarea placeholder="Digite alguma coisa..." id="entrada-de-texto"></textarea>
+        <div>
+            <label for="upload-arquivo" id="arquivo-label"></label>
+            <input type="file" id="upload-arquivo" accept=".txt">
+        </div>
+    </div>
+    <div class="acoes">
+        <div class="acao-box"></div>
+        <p>Selecione a voz</p>
+        <select id="selecao-voz"></select>
+        <div class="acao-box"></div>
+        <p>Clique para ouvir</p>
+        <button id="ouvir-btn">Ouvir</button>
+        <div class="acao-box"></div>
+        <p>>Obtenha um arquivo do conteúdo:</p>
+        <button id="baixar-texto-btn">Baixar Texto</button>
+
+    </div>
+</body>
+</html>
